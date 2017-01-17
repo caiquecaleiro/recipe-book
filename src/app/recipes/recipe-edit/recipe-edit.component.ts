@@ -30,7 +30,7 @@ export class RecipeEditComponent implements OnInit, OnDestroy {
           this.recipeIndex = +params['id'];
           this.recipe = this.recipeService.getRecipe(this.recipeIndex);
         } else {
-          this.isNew = false;
+          this.isNew = true;
           this.recipe = null;
         }
         this.initForm();
